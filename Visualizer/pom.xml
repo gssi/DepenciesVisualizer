@@ -1,0 +1,38 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>DependenciesAnalyzer</groupId>
+  <artifactId>DependenciesAnalyzer</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>depenciesAnalyzer</name>
+  <dependencies>
+  <!-- https://mvnrepository.com/artifact/org.eclipse.epsilon/epsilon-core -->
+<dependency>
+    <groupId>org.eclipse.epsilon</groupId>
+    <artifactId>epsilon-core</artifactId>
+    <version>1.5.1</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.eclipse.emf/org.eclipse.emf.ecore -->
+<dependency>
+    <groupId>org.eclipse.emf</groupId>
+    <artifactId>org.eclipse.emf.ecore</artifactId>
+    <version>2.23.0</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.eclipse.emf/org.eclipse.emf.common -->
+<dependency>
+    <groupId>org.eclipse.emf</groupId>
+    <artifactId>org.eclipse.emf.common</artifactId>
+    <version>2.20.0</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.eclipse.core/org.eclipse.core.resources -->
+<dependency>
+    <groupId>org.eclipse.core</groupId>
+    <artifactId>org.eclipse.core.resources</artifactId>
+    <version>3.7.100</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.eclipse/org.eclipse.emf.common.ui -->
+
+
+
+</dependencies>
+</project>
