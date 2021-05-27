@@ -35,14 +35,14 @@ rule SingleArtifact
 		
         "nodes" =  node.getConnected(),
        
-        "edges" = node.repository.edges.select(e|e.src==node or e.trg==node)
+        "edges" = node.graph.edges.select(e|e.src==node or e.trg==node)
        
 	}
 	
 }
 
 operation Node getConnected(): Set(Artifact){
-var ecosystem = self.repository;
+var ecosystem = self.graph;
 return ecosystem.nodes.select(a|ecosystem.edges.select(rel| emfTool.EcoreUtil.equals(rel.src,a) or emfTool.EcoreUtil.equals(rel.trg,a)).select(r|emfTool.EcoreUtil.equals(r.src,self) or emfTool.EcoreUtil.equals(r.trg,self)).size()>0);
 }
 
